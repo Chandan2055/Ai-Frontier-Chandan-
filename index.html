@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Frontier Chandan | Odia AI Prompts, Posters & Websites</title>
+  <meta name="description" content="Get viral Odia AI Prompt Packs, Custom Shop Posters, AI Voiceovers, and 1-Page Business Websites delivered directly on WhatsApp." />
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --card: #121826;
+      --card-border: #1f2937;
+      --text: #f3f4f6;
+      --muted: #9ca3af;
+      --accent: #f59e0b;
+      --accent-hover: #d97706;
+      --wa: #25D366;
+      --wa-dark: #1ebe5d;
+      --badge: rgba(245, 158, 11, 0.15);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding-bottom: 80px;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 18px;
+    }
+
+    /* Header */
+    header {
+      padding: 20px 0;
+      border-bottom: 1px solid var(--card-border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      font-weight: 800;
+      font-size: 1.15rem;
+      letter-spacing: -0.02em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .brand span {
+      color: var(--accent);
+    }
+
+    .nav-wa {
+      background: var(--card);
+      border: 1px solid var(--card-border);
+      color: var(--text);
+      text-decoration: none;
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      transition: 0.2s;
+    }
+
+    .nav-wa:hover {
+      border-color: var(--wa);
+      color: var(--wa);
+    }
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      padding: 44px 0 32px;
+    }
+
+    .pill {
+      display: inline-block;
+      background: var(--badge);
+      color: var(--accent);
+      padding: 5px 14px;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-size: clamp(1.75rem, 4.5vw, 2.75rem);
+      line-height: 1.2;
+      font-weight: 800;
+      margin-bottom: 14px;
+    }
+
+    .hero p {
+      color: var(--muted);
+      max-width: 600px;
+      margin: 0 auto 24px;
+      font-size: 1rem;
+    }
+
+    /* Interactive Free Tool Box */
+    .demo-box {
+      background: linear-gradient(145deg, #131b2e, #0f1523);
+      border: 1px solid #26324d;
+      border-radius: 16px;
+      padding: 22px;
+      margin: 10px auto 42px;
+      max-width: 680px;
+      text-align: left;
+    }
+
+    .demo-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .demo-header h2 {
+      font-size: 1.05rem;
+      color: #fff;
+    }
+
+    .demo-controls {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+
+    select {
+      flex: 1;
+      min-width: 180px;
+      background: var(--bg);
+      color: var(--text);
+      border: 1px solid var(--card-border);
+      padding: 10px 12px;
+      border-radius: 10px;
+      font-size: 0.92rem;
+    }
+
+    .btn-try {
+      background: var(--accent);
+      color: #000;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 10px;
+      font-weight: 700;
+      cursor: pointer;
+      font-size: 0.92rem;
+      transition: 0.2s;
+    }
+
+    .btn-try:hover {
+      background: var(--accent-hover);
+    }
+
+    .prompt-output {
+      background: var(--bg);
+      border: 1px dashed #334155;
+      border-radius: 10px;
+      padding: 14px;
+      font-size: 0.9rem;
+      color: #e2e8f0;
+      position: relative;
+    }
+
+    .copy-mini {
+      margin-top: 10px;
+      background: #1e293b;
+      color: #fff;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      cursor: pointer;
+    }
+
+    /* Section Headings */
+    .section-title {
+      font-size: 1.4rem;
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+
+    .section-sub {
+      color: var(--muted);
+      font-size: 0.92rem;
+      margin-bottom: 22px;
+    }
+
+    /* Product Grid */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+      gap: 18px;
+      margin-bottom: 44px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.2s, border-color 0.2s;
+      position: relative;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      border-color: #374151;
+    }
+
+    .card.featured {
+      border-color: var(--accent);
+    }
+
+    .tag {
+      position: absolute;
+      top: -11px;
+      right: 16px;
+      background: var(--accent);
+      color: #000;
+      font-size: 0.72rem;
+      font-weight: 800;
+      padding: 3px 10px;
+      border-radius: 999px;
+      text-transform: uppercase;
+    }
+
+    .card h3 {
+      font-size: 1.15rem;
+      margin-bottom: 6px;
+    }
+
+    .price {
+      font-size: 1.65rem;
+      font-weight: 800;
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+
+    .price span {
+      font-size: 0.85rem;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    .features {
+      list-style: none;
+      margin-bottom: 20px;
+      font-size: 0.9rem;
+      color: #d1d5db;
+    }
+
+    .features li {
+      margin-bottom: 8px;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .features li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--wa);
+      font-weight: bold;
+    }
+
+    .btn-wa {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      background: var(--wa);
+      color: #052e16;
+      text-decoration: none;
+      font-weight: 800;
+      padding: 12px 16px;
+      border-radius: 12px;
+      font-size: 0.95rem;
+      transition: 0.2s;
+    }
+
+    .btn-wa:hover {
+      background: var(--wa-dark);
+    }
+
+    /* How it works */
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 14px;
+      margin-bottom: 40px;
+    }
+
+    .step {
+      background: var(--card);
+      border: 1px solid var(--card-border);
+      padding: 16px;
+      border-radius: 12px;
+      font-size: 0.9rem;
+    }
+
+    .step strong {
+      display: block;
+      color: var(--accent);
+      margin-bottom: 4px;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+      border-top: 1px solid var(--card-border);
+      padding-top: 24px;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    /* Sticky Mobile WhatsApp Bar */
+    .floating-wa {
+      position: fixed;
+      bottom: 16px;
+      right: 16px;
+      background: var(--wa);
+      color: #052e16;
+      font-weight: 800;
+      padding: 12px 18px;
+      border-radius: 999px;
+      text-decoration: none;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+      font-size: 0.92rem;
+      z-index: 99;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <div class="brand">⚡ AI Frontier <span>Chandan</span></div>
+      <a class="nav-wa" href="#" data-wa="Hi Chandan, I saw your website and want to know more about your AI services.">Chat on WhatsApp</a>
+    </header>
+
+    <section class="hero">
+      <div class="pill">ଜୟ ଜଗନ୍ନାଥ 🙏 • Odia AI & Digital Store</div>
+      <h1>Grow Your Channel & Business With Ready-to-Use AI</h1>
+      <p>No complicated setup. Pick a prompt pack, custom Odia voiceover, shop poster, or 1-page website—click below and get it delivered directly on WhatsApp.</p>
+    </section>
+
+    <!-- Free Interactive Prompt Preview to Build Trust -->
+    <section class="demo-box">
+      <div class="demo-header">
+        <h2>🎁 Try 1 Free Odia AI Prompt Sample</h2>
+        <span style="font-size:0.8rem; color:var(--muted);">Works with Gemini & ChatGPT</span>
+      </div>
+      <div class="demo-controls">
+        <select id="nicheSelect">
+          <option value="shayari">Odia Emotional Shayari Short</option>
+          <option value="shop">Local Shop / Offer Ad Script (Odia)</option>
+          <option value="facts">Viral Odia Facts / Motivation Reel</option>
+        </select>
+        <button class="btn-try" onclick="generateSample()">Generate Prompt</button>
+      </div>
+      <div class="prompt-output" id="promptBox">
+        Click "Generate Prompt" to test a free sample before buying the full 100+ pack.
+      </div>
+      <button class="copy-mini" onclick="copyPrompt()">📋 Copy Prompt</button>
+    </section>
+
+    <!-- Main Products -->
+    <h2 class="section-title">Popular AI Packs & Services</h2>
+    <p class="section-sub">Click any button to open WhatsApp with your order pre-filled. Pay via UPI only after chatting.</p>
+
+    <div class="grid">
+      <!-- Product 1 -->
+      <div class="card featured">
+        <div class="tag">Best Seller</div>
+        <div>
+          <h3>100+ Viral Odia AI Prompt Bundle</h3>
+          <div class="price">₹149 <span>/ instant delivery</span></div>
+          <ul class="features">
+            <li>Odia Shayari & Motivation Shorts prompts</li>
+            <li>Google Flow & AI Image visual prompts</li>
+            <li>YouTube title, hook & description templates</li>
+            <li>Lifetime access via Google Drive / PDF</li>
+          </ul>
+        </div>
+        <a class="btn-wa" href="#" data-wa="Hi Chandan, I want to buy the 100+ Viral Odia AI Prompt Bundle (₹149). Please share UPI details.">
+          Buy on WhatsApp • ₹149
+        </a>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="card">
+        <div>
+          <h3>Custom Shop Poster & Festival Pack</h3>
+          <div class="price">₹299 <span>/ 3 custom designs</span></div>
+          <ul class="features">
+            <li>Odia / English banners for shops & coaching</li>
+            <li>Raja, Rath Yatra, Puja & Offer status flyers</li>
+            <li>Your shop name, photo & phone number added</li>
+            <li>Delivered in HD on WhatsApp within 4 hours</li>
+          </ul>
+        </div>
+        <a class="btn-wa" href="#" data-wa="Hi Chandan, I want to order the Custom Shop Poster Pack (3 Designs for ₹299).">
+          Order Posters • ₹299
+        </a>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="card">
+        <div>
+          <h3>Studio Odia AI Voiceover Pack</h3>
+          <div class="price">₹199 <span>/ 3 reel scripts</span></div>
+          <ul class="features">
+            <li>Natural Male or Female Odia AI voice</li>
+            <li>Perfect for faceless YouTube, Reels & shop ads</li>
+            <li>Clean MP3 audio with background music option</li>
+            <li>Fast same-day WhatsApp delivery</li>
+          </ul>
+        </div>
+        <a class="btn-wa" href="#" data-wa="Hi Chandan, I need Odia AI Voiceovers (₹199 pack). Here are my script details:">
+          Order Voiceover • ₹199
+        </a>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="card">
+        <div class="tag">For Business</div>
+        <div>
+          <h3>1-Page Business Website + WhatsApp</h3>
+          <div class="price">₹1,999 <span>/ one-time</span></div>
+          <ul class="features">
+            <li>Fast mobile-first website just like this page</li>
+            <li>Direct WhatsApp order buttons for your customers</li>
+            <li>Free lifetime hosting setup included</li>
+            <li>Ideal for gyms, clinics, tutors & local shops</li>
+          </ul>
+        </div>
+        <a class="btn-wa" href="#" data-wa="Hi Chandan, I want a 1-Page Business Website with WhatsApp integration (₹1,999) for my business.">
+          Book Website • ₹1,999
+        </a>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="card">
+        <div>
+          <h3>YouTube / Insta Creator Starter Kit</h3>
+          <div class="price">₹999 <span>/ complete setup</span></div>
+          <ul class="features">
+            <li>Custom channel logo & mobile-friendly banner</li>
+            <li>3 editable thumbnail templates</li>
+            <li>15 viral Odia video ideas for your niche</li>
+            <li>15-min WhatsApp call guidance</li>
+          </ul>
+        </div>
+        <a class="btn-wa" href="#" data-wa="Hi Chandan, I want the YouTube/Instagram Creator Starter Kit (₹999).">
+          Start Channel • ₹999
+        </a>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="card">
+        <div>
+          <h3>1-on-1 Mobile AI Coaching Call</h3>
+          <div class="price">₹499 <span>/ 45 mins</span></div>
+          <ul class="features">
+            <li>Learn AI video, voice & poster making on phone</li>
+            <li>Personal guidance in Odia or Hindi</li>
+            <li>Solve your exact channel or business workflow</li>
+            <li>Includes free prompt starter sheet</li>
+          </ul>
+        </div>
+        <a class="btn-wa" href="#" data-wa="Hi Chandan, I want to book a 45-min 1-on-1 Mobile AI Coaching session (₹499).">
+          Book Session • ₹499
+        </a>
+      </div>
+    </div>
+
+    <!-- Simple 3-Step Trust Flow -->
+    <h2 class="section-title">How Ordering Works</h2>
+    <p class="section-sub">Simple, transparent, and 100% WhatsApp supported.</p>
+    <div class="steps">
+      <div class="step">
+        <strong>1. Click Product Button</strong>
+        Opens my WhatsApp directly with your selected item pre-filled.
+      </div>
+      <div class="step">
+        <strong>2. Confirm & Pay via UPI</strong>
+        Share your requirement (if custom) and pay securely via PhonePe / GPay / Paytm.
+      </div>
+      <div class="step">
+        <strong>3. Instant / Same-Day Delivery</strong>
+        Receive your digital files, designs, or website link straight on WhatsApp.
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2026 AI Frontier Chandan • Built for Odisha Creators & Businesses</p>
+      <p style="margin-top:6px;">
+        <a href="https://youtube.com/@ai_frontier_chandan" target="_blank" rel="noopener">YouTube Channel</a> • 
+        <a href="https://t.me/ai_frontier_chandan" target="_blank" rel="noopener">Telegram Community</a>
+      </p>
+    </footer>
+  </div>
+
+  <a class="floating-wa" href="#" data-wa="Hi Chandan, I visited your website and have a quick question.">💬 WhatsApp Me</a>
+
+  <script>
+    // ==========================================
+    // 1. REPLACE ONLY THIS NUMBER WITH YOURS
+    // Include country code 91, no '+' or spaces
+    // ==========================================
+    const WHATSAPP_NUMBER = "919999999999";
+
+    // Automatically attach pre-filled WhatsApp links to all buttons
+    document.querySelectorAll("[data-wa]").forEach((btn) => {
+      const message = encodeURIComponent(btn.getAttribute("data-wa"));
+      btn.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`;
+      btn.target = "_blank";
+      btn.rel = "noopener";
+    });
+
+    // Free sample prompt generator
+    const samples = {
+      shayari: `Write 3 heart-touching 4-line Odia Shayari scripts for YouTube Shorts about late-night memories and silent love. Keep the Odia simple, emotional, and rhythmic. Also suggest an AI background visual prompt (rainy night, cinematic neon glow, 9:16 vertical) for Google Flow.`,
+      shop: `Act as an Odisha local marketing expert. Write a 20-second energetic Odia promotional voiceover script for a [Mobile/Clothing/Coaching] shop offering a special weekend discount. Start with a strong 3-second hook in Odia and end with a clear call to visit the shop today.`,
+      facts: `Give me 3 surprising psychology/life facts written in natural spoken Odia for a 30-second YouTube Short. Format each with: 1) Scroll-stopping first line, 2) Main fact in simple Odia, 3) Question at the end to increase comments.`
+    };
+
+    function generateSample() {
+      const choice = document.getElementById("nicheSelect").value;
+      document.getElementById("promptBox").textContent = samples[choice];
+    }
+
+    function copyPrompt() {
+      const text = document.getElementById("promptBox").textContent;
+      navigator.clipboard.writeText(text).then(() => {
+        const btn = document.querySelector(".copy-mini");
+        btn.textContent = "✅ Copied!";
+        setTimeout(() => (btn.textContent = "📋 Copy Prompt"), 2000);
+      });
+    }
+
+    // Load default sample on page open
+    generateSample();
+  </script>
+</body>
+</html>
